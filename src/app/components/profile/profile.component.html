@@ -1,0 +1,43 @@
+<div class="card p-2">
+    <div class="avatar-container text-center mx-auto">
+        <div class="card-up aqua-gradient"></div>
+        <div class="avatar mx-auto white">
+            <a [href]="user.html_url">
+                <img [src]="user.avatar_url"
+                width="300" 
+                height="300" 
+                class="rounded-circle img-responsive bg-white p-2 image">
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="card-title">
+                <h2>{{user.name}}</h2>
+            </div>
+            <div *ngIf="user.email" class="card-text">
+                Email: {{user?.email}}
+            </div>
+            <div *ngIf="user.bio" class="card-text">
+                Bio: {{user?.bio}}
+            </div>
+            <div  class="card-text">
+                Followers: {{user?.followers}}
+            </div>
+            <div  class="card-text">
+                Following: {{user?.following}}
+            </div>
+            <div class="card-text">
+                Repositories: {{user?.public_repos}}
+            </div>
+            <div *ngIf="user.company" class="card-text">
+                Company: {{user?.company}}
+            </div>
+            <div *ngIf="user.location" class="card-text">
+                Location: {{user?.location}}
+            </div>
+            <div class="card-text">
+                Created at: {{user?.created_at | date}}
+            </div>
+        </div>
+    </div>
+
+</div>

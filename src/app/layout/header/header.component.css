@@ -1,0 +1,9 @@
+.active {
+  border-bottom: 2px solid rgb(145, 174, 228);
+}
+.bg-nav {
+  background: rgb(192, 83, 192);
+}
+a:hover {
+  cursor: pointer;
+}

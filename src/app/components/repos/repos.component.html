@@ -1,0 +1,8 @@
+<div *ngFor="let repo of repos" class="list-group">
+    <a 
+    class="list-group-item"
+    [href]="repo.html_url" 
+    target="_blank">
+    {{repo.name}} 
+    </a>
+</div>
